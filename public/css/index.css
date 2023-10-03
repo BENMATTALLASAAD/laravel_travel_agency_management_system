@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*---- ROOT VARIABLES ------------*/
+:root{
+    --color-primary:#7380ec;
+    --color-danger:#ff7782;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,0.18);
+    --color-primary-variant:#111e88;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+    --card-border-radius:2rem;
+    --border-radius-1:0.4rem;
+    --border-radius-2:0.8rem;
+    --border-radius-3:1.2rem;
+
+    --card-padding:1.8rem;
+    --padding-1:1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/*---- DARK THEME VARIABLES ------------*/
+.dark-theme-variables{
+    --color-background:#181a1e;
+    --color-white:#202528;
+    --color-dark:#edeffd;
+    --color-dark-variant:#a3bdcc;
+    --color-light:rgba(0,0,0 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: var(--color-dark-variant) url("../images/BackgroundPFE.jpeg") no-repeat;
+    background-size: 100%;
+    display: flex;
+    font-family: sans-serif;
+}
+.container{
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+    border-radius: var(--card-border-radius);
+}
+
+.container form{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+}
+
+.container form h2{
+    text-align: center;
+    margin-bottom: 24px;
+    color: #222;
+}
+.container form .form-control{
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid silver;
+    margin: 10px 0 18px 0; 
+    padding: 0 10px;
+}
+.container form .btn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 34px;
+    border: none;
+    cursor: pointer;
+    background: var(--color-primary);
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    transition:all 300ms ease;
+    border-radius: var(--border-radius-1);
+}
+
+.container form .btn:hover{
+    background: var(--color-primary-variant);
+}
